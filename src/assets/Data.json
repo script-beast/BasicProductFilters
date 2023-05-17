@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Product 1",
+    "price": 100,
+    "description": "This is product 1",
+    "reviews": 45,
+    "brand": "Brand 1",
+    "category": "Category 1"
+  },
+  {
+    "id": 2,
+    "name": "Product 2",
+    "price": 200,
+    "description": "This is product 2",
+    "reviews": 45,
+    "brand": "Brand 2",
+    "category": "Category 2"
+  },
+  {
+    "id": 3,
+    "name": "Product 3",
+    "price": 300,
+    "description": "This is product 3",
+    "reviews": 45,
+    "brand": "Brand 3",
+    "category": "Category 3"
+  },
+  {
+    "id": 4,
+    "name": "Product 4",
+    "price": 400,
+    "description": "This is product 4",
+    "reviews": 45,
+    "brand": "Brand 4",
+    "category": "Category 4"
+  },
+  {
+    "id": 5,
+    "name": "Product 5",
+    "price": 500,
+    "description": "This is product 5",
+    "reviews": 45,
+    "brand": "Brand 5",
+    "category": "Category 5"
+  },
+  {
+    "id": 6,
+    "name": "Product 6",
+    "price": 600,
+    "description": "This is product 6",
+    "reviews": 45,
+    "brand": "Brand 1",
+    "category": "Category 2"
+  },
+  {
+    "id": 7,
+    "name": "Product 7",
+    "price": 700,
+    "description": "This is product 7",
+    "reviews": 45,
+    "brand": "Brand 2",
+    "category": "Category 3"
+  },
+  {
+    "id": 8,
+    "name": "Product 8",
+    "price": 800,
+    "description": "This is product 8",
+    "reviews": 45,
+    "brand": "Brand 3",
+    "category": "Category 4"
+  },
+  {
+    "id": 9,
+    "name": "Product 9",
+    "price": 900,
+    "description": "This is product 9",
+    "reviews": 45,
+    "brand": "Brand 4",
+    "category": "Category 5"
+  },
+  {
+    "id": 10,
+    "name": "Product 10",
+    "price": 1000,
+    "description": "This is product 10",
+    "reviews": 45,
+    "brand": "Brand 5",
+    "category": "Category 1"
+  },
+  {
+    "id": 11,
+    "name": "Product 11",
+    "price": 1100,
+    "description": "This is product 11",
+    "reviews": 45,
+    "brand": "Brand 1",
+    "category": "Category 2"
+  },
+  {
+    "id": 12,
+    "name": "Product 12",
+    "price": 1200,
+    "description": "This is product 12",
+    "reviews": 45,
+    "brand": "Brand 2",
+    "category": "Category 3"
+  },
+  {
+    "id": 13,
+    "name": "Product 13",
+    "price": 1300,
+    "description": "This is product 13",
+    "reviews": 45,
+    "brand": "Brand 3",
+    "category": "Category 4"
+  },
+  {
+    "id": 14,
+    "name": "Product 14",
+    "price": 1400,
+    "description": "This is product 14",
+    "reviews": 45,
+    "brand": "Brand 4",
+    "category": "Category 5"
+  },
+  {
+    "id": 15,
+    "name": "Product 15",
+    "price": 1500,
+    "description": "This is product 15",
+    "reviews": 45,
+    "brand": "Brand 5",
+    "category": "Category 1"
+  },
+  {
+    "id": 16,
+    "name": "Product 16",
+    "price": 1600,
+    "description": "This is product 16",
+    "reviews": 45,
+    "brand": "Brand 1",
+    "category": "Category 2"
+  },
+  {
+    "id": 17,
+    "name": "Product 17",
+    "price": 1700,
+    "description": "This is product 17",
+    "reviews": 45,
+    "brand": "Brand 2",
+    "category": "Category 3"
+  },
+  {
+    "id": 18,
+    "name": "Product 18",
+    "price": 1800,
+    "description": "This is product 18",
+    "reviews": 45,
+    "brand": "Brand 3",
+    "category": "Category 4"
+  },
+  {
+    "id": 19,
+    "name": "Product 19",
+    "price": 1900,
+    "description": "This is product 19",
+    "reviews": 45,
+    "brand": "Brand 3",
+    "category": "Category 5"
+  },
+  {
+    "id": 20,
+    "name": "Product 20",
+    "price": 2000,
+    "description": "This is product 20",
+    "reviews": 45,
+    "brand": "Brand 5",
+    "category": "Category 1"
+  }
+]

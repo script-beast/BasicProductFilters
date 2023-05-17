@@ -1,0 +1,17 @@
+select,
+.btn {
+  color: orange;
+}
+.sort {
+  outline: none;
+  border: none;
+}
+.btn {
+  border: 1px solid orange;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.btn:hover {
+  color: #fff;
+  background-color: orange;
+}
