@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-import Data from "../src/assets/data.json";
+import Data from "../src/assets/Data.json";
 
 import Navbar from "./Components/Navbar";
 import Sidebar from "./Components/Sidebar";
