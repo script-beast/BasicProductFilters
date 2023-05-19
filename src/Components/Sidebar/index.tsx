@@ -25,28 +25,7 @@ const Index = (props: sidebarprops) => {
     setUniBrands(brands);
     setUniprice(prices);
     setUnicategory(categorys);
-
-    const allFalse = Object.values(brands).every((item) => item === false);
-    const allFalse1 = Object.values(prices).every((item) => item === false);
-    const allFalse2 = Object.values(categorys).every((item) => item === false);
-
-    if (allFalse && allFalse1 && allFalse2) {
-      setProducts(inProducts);
-      return;
-    }
-
-    const filteredProducts = inProducts.filter((product: product) => {
-      if (
-        brands[product.brand] ||
-        prices[product.price] ||
-        categorys[product.category]
-      ) {
-        return true;
-      }
-      return false;
-    });
-
-    setProducts(filteredProducts);
+    setProducts(inProducts);
   }, [inProducts]);
 
   const handleFilter = (filter: string, value: string) => {
@@ -78,11 +57,9 @@ const Index = (props: sidebarprops) => {
       setUnicategory(newcategory);
     }
 
-    const allFalse = Object.values(newBrands).every((item) => item === false);
-    const allFalse1 = Object.values(newPrice).every((item) => item === false);
-    const allFalse2 = Object.values(newcategory).every(
-      (item) => item === false
-    );
+    const allFalse = Object.values(newBrands).every((item) => !item);
+    const allFalse1 = Object.values(newPrice).every((item) => !item);
+    const allFalse2 = Object.values(newcategory).every((item) => !item);
 
     if (allFalse && allFalse1 && allFalse2) {
       setProducts(inProducts);
@@ -91,9 +68,19 @@ const Index = (props: sidebarprops) => {
 
     const filteredProducts = inProducts.filter((product: product) => {
       if (
-        newBrands[product.brand] ||
-        newPrice[product.price] ||
-        newcategory[product.category]
+        (newBrands[product.brand] && allFalse1 && allFalse2) ||
+        (newPrice[product.price] && allFalse && allFalse2) ||
+        (newcategory[product.category] && allFalse && allFalse1) ||
+        (newBrands[product.brand] && newPrice[product.price] && allFalse2) ||
+        (newBrands[product.brand] &&
+          newcategory[product.category] &&
+          allFalse1) ||
+        (newPrice[product.price] &&
+          newcategory[product.category] &&
+          allFalse) ||
+        (newBrands[product.brand] &&
+          newPrice[product.price] &&
+          newcategory[product.category])
       ) {
         return true;
       }
