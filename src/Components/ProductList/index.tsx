@@ -63,7 +63,7 @@ const Categories = (props: productprops) => {
   return (
     <section className="products">
       <div className="container">
-        <div className="d-flex flex-row my-3">
+        <div className="d-flex flex-row">
           <div className="text-muted m-2">
             Home / Home Decoration / Artificial
           </div>

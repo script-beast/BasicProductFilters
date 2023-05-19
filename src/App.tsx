@@ -22,8 +22,12 @@ function App() {
   return (
     <div className="">
       <Navbar setProducts={setProducts} inProducts={inProducts} />
-      <Sidebar setProducts={setProducts} inProducts={inProducts} />
-      <ProductList products={products} />
+        <div className="d-flex justify-content-center">
+      <div className="mainbody">
+          <Sidebar setProducts={setProducts} inProducts={inProducts} />
+          <ProductList products={products} />
+        </div>
+      </div>
     </div>
   );
 }

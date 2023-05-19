@@ -23,31 +23,33 @@ const Index = (props: navbarprops) => {
   };
 
   return (
-    <div className="navbar px-5">
-      <div className="navbar__left d-flex">
-        <div className="navbar__logo">
-          <img className="navbar-brand" src={logopic} alt="logo" />
+    <div className="navbar d-flex justify-content-center">
+      <div className="navbarcontent">
+        <div className="navbar__left d-flex">
+          <div className="navbar__logo">
+            <img className="navbar-brand" src={logopic} alt="logo" />
+          </div>
+          <div className="navbar__search">
+            <input
+              type="text"
+              placeholder="Search"
+              value={Search}
+              onChange={handleSearch}
+            />
+          </div>
         </div>
-        <div className="navbar__search">
-          <input
-            type="text"
-            placeholder="Search"
-            value={Search}
-            onChange={handleSearch}
-          />
-        </div>
-      </div>
 
-      <div className="navbar__right d-flex">
-        <div className="navbar__cat mx-2 d-flex align-items-center">
-          <i className="fa-solid fa-align-right mx-1"></i>
-          <div className="">Categories</div>
-        </div>
-        <div className="navbar__noti mx-2">
-          <i className="fa-solid fa-bell"></i>
-        </div>
-        <div className="navbar__ava mx-2">
-          <i className="fa-solid fa-circle-user"></i>
+        <div className="navbar__right d-flex">
+          <div className="navbar__cat mx-2 d-flex align-items-center">
+            <i className="fa-solid fa-align-right mx-1"></i>
+            <div className="">Categories</div>
+          </div>
+          <div className="navbar__noti mx-2">
+            <i className="fa-solid fa-bell"></i>
+          </div>
+          <div className="navbar__ava mx-2">
+            <i className="fa-solid fa-circle-user"></i>
+          </div>
         </div>
       </div>
     </div>

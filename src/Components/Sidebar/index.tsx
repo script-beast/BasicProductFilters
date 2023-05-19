@@ -91,9 +91,10 @@ const Index = (props: sidebarprops) => {
   };
 
   return (
-    <section className="sidebar">
-      <div className="border-bottom pb-2 ms-2">
+    <section className="sidebar sticky-top">
+      <div className="border-bottom pb-2 ms-2 d-flex justify-content-between align-items-center">
         <h4>Filters</h4>
+        <i className="fa-solid fa-sliders"></i>
       </div>
       <div className="py-2 border-bottom ms-3">
         <h6 className="font-weight-bold pb-1">Brands</h6>
@@ -123,14 +124,14 @@ const Index = (props: sidebarprops) => {
           </div>
         ))} */}
 
-        <div className="form-group">
+        <div className="form-group d-flex align-items-center">
           <input
             type="checkbox"
             id="below"
             checked={UniCatPrice["below"]}
             onChange={() => handleFilter("price", "0-500")}
           />
-          <label htmlFor="below">Below 500</label>
+          <label htmlFor="below ms-2">{"<"}500</label>
         </div>
         <div className="form-group">
           <input
